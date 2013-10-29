@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "authors": [
+    "Jairo Gatjens <jgatjens@gmail.com>"
+  ],
+  "description": "Books Frontend App",
+  "main": "index.html",
+  "keywords": [
+    "Books",
+    "frontned",
+    "js",
+    "javascript"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.0.3",
+    "modernizr": "~2.6.2"
+  }
+}
