@@ -56,6 +56,15 @@ module.exports = function(grunt) {
           path: 'http://localhost:<%= connect.options.port %>'
       }
     },
+    qunit: {
+      all: {
+        options: {
+          urls: [
+            'http://localhost:9000/index.html'
+          ]
+        }
+      }
+    },
     compass: {
         options: {
             sassDir: 'scss',
@@ -85,6 +94,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks("grunt-open");
 
@@ -96,7 +106,8 @@ module.exports = function(grunt) {
             'concurrent:server',
             'connect:livereload',
             'open',
-            'watch'
+            'watch',
+            'qunit'
         ]);
     });
 
